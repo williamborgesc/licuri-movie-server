@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="685.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="licuri.server.main.MainController">
+   <children>
+      <TabPane prefHeight="479.0" prefWidth="685.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Servidor">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="38.0" layoutY="90.0" text="Status do Servidor:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStatusServer" layoutX="276.0" layoutY="90.0" text="Iniciado" textFill="#d7fbbf">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnStartServer" layoutX="112.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleStartServer" prefHeight="51.0" prefWidth="196.0" text="Iniciar">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnStopServer" layoutX="366.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleStopServer" prefHeight="51.0" prefWidth="189.0" text="Parar">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
